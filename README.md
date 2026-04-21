@@ -30,22 +30,36 @@ trader-sentiment-analysis/
 
 ## ⚙️ Setup & How to Run
 
-### 1. Clone the repo
+### 1. Clone the repo (macOS/Linux)
 ```bash
-git clone https://github.com/<your-username>/trader-sentiment-analysis.git
-cd trader-sentiment-analysis
+git clone https://github.com/Xaan1506/Trading-perfomance.git
+cd Trading-perfomance
 ```
 
-### 2. Install dependencies
+### 2. Create & activate virtual environment (macOS)
 ```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies (macOS)
+```bash
+pip install --upgrade pip
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
-### 3. Run the notebook
+### 4. Run the notebook (macOS)
 ```bash
 jupyter notebook trader_sentiment_analysis.ipynb
 ```
-Go to **Kernel → Restart & Run All**. All 10 charts regenerate automatically.
+- Browser will open automatically at `http://localhost:8888`
+- Go to **Kernel → Restart & Run All** to execute all cells
+- All 10 charts will regenerate automatically
+
+### 5. Deactivate virtual environment (when done)
+```bash
+deactivate
+```
 
 ---
 
@@ -100,6 +114,23 @@ Reduce size 25%, tighten stops, avoid altcoin FOMO — pros pull back on Greed d
 
 - Random Forest: 90% accuracy predicting profitable days
 - K-Means: 4 trader archetypes (Conservative, Aggressive, Balanced, Inactive)
+
+---
+
+## 🚀 Push to GitHub (macOS)
+
+Once you've completed the analysis, push your changes:
+
+```bash
+# Stage all files
+git add .
+
+# Commit with a message
+git commit -m "Complete Primetrade.ai Data Science Internship Assignment"
+
+# Push to GitHub main branch
+git push origin main
+```
 
 ---
 *Submitted by XaaN — Primetrade.ai Data Science Internship*
